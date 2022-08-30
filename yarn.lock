@@ -967,9 +967,9 @@
   "resolved" "https://registry.npmjs.org/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz"
   "version" "1.0.4"
 
-"gsap@npm:@gsap/shockingly@^3.11.0":
-  "integrity" "sha512-1EeF2zov6PTDpW8dQI0NdWkhukowHOWV93IhX8vZDUFtf9xh+P54JfCNTa1kBCEQQYkBNRGqCgI9IEcRh25ZVw=="
-  "resolved" "https://npm.greensock.com/@gsap%2fshockingly/-/shockingly-3.11.0.tgz"
+"gsap-trial@^3.11.0":
+  "integrity" "sha512-sBFCwKe8aX/VInbXej9RkgTtfFptpYBlV/T3LyJy9Vmo4+MWvr1cKgPfRfRp4U/rPKk83LljeP+H73I3rGXdRQ=="
+  "resolved" "https://registry.npmjs.org/gsap-trial/-/gsap-trial-3.11.0.tgz"
   "version" "3.11.0"
 
 "has-bigints@^1.0.1", "has-bigints@^1.0.2":
