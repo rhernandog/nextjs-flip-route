@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { memo, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
-import { gsap } from "gsap/dist/gsap";
-import { Flip } from "gsap/dist/Flip";
+import { gsap } from "gsap-trial/dist/gsap";
+import { Flip } from "gsap-trial/dist/Flip";
 
 gsap.registerPlugin(Flip);
 
