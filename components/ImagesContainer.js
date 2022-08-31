@@ -28,7 +28,6 @@ const ImagesContainer = () => {
   const [icons, setIcons] = useState(initialIcons);
   const iconsRefs = useRef(null);
   const flipState = useRef(null);
-  const initialRender = useRef(true);
   const { pathname } = useRouter();
 
   const iconClickHandler = (e) => {
@@ -48,20 +47,17 @@ const ImagesContainer = () => {
   }, [icons]);
 
   useEffect(() => {
-    if (!initialRender.current) {
-      flipState.current = Flip.getState(iconsRefs.current);
-      let targetIcon;
-      const updatedIcons = icons.filter((icon) => {
-        if (icon.route === pathname) {
-          targetIcon = icon;
-          return false;
-        }
-        return true;
-      });
-      updatedIcons.unshift(targetIcon);
-      setIcons(updatedIcons);
-    }
-    initialRender.current = false;
+    flipState.current = Flip.getState(iconsRefs.current);
+    let targetIcon;
+    const updatedIcons = icons.filter((icon) => {
+      if (icon.route === pathname) {
+        targetIcon = icon;
+        return false;
+      }
+      return true;
+    });
+    updatedIcons.unshift(targetIcon);
+    setIcons(updatedIcons);
   }, [pathname]);
 
   return (
