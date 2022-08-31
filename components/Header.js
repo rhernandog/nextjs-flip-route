@@ -4,7 +4,7 @@ import { memo } from "react";
 const Header = () => {
   return (
     <header className="w-full h-[70px] bg-teal-700 text-white flex justify-between items-end px-4">
-      <div className="pb-1 text-3xl font-semibold">Brand</div>
+      <div className="pb-1 text-3xl font-semibold">Magix</div>
       <nav>
         <ul className="flex gap-4">
           <li>
